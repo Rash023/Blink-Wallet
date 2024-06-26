@@ -11,6 +11,6 @@ npm i
 npm run dev
 ```
 
-## Activity Diagram
+## Architecture
 
 ![Example Image](./static/diagram.png)
