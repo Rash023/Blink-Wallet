@@ -15,13 +15,28 @@ Build a merchant app providing businesses with robust tools to manage sales and 
 
 ## Installation
 
-Run the following command:
-
+Install the dependencies:
 ```sh
-npm i
-npm run dev
+  npm i
 ```
 
+
+Migrate the database:
+```sh
+  npx prisma migrate dev
+  npx prisma generate
+```
+
+Run the server
+```sh
+  npm run dev
+```
+Below are the port mappings for the apps respectively:
+```sh
+  -merchant-app:  PORT 3000
+  -user-app:      PORT 3001
+  -bank-webhook:  PORT 3003
+```
 ## Architecture
 
 ![Example Image](./static/diagram.png)
